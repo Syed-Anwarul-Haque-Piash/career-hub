@@ -15,7 +15,7 @@ const FeaturedJobs = () => {
         <div>
             <h1 className='text-center font-bold text-4xl'>Featured Jobs</h1>
             <p className='text-gray-400 text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-            <div>
+            <div className='md:grid grid-cols-2 gap-4 p-4 ml-6'>
                 {jobs.map(job=><Job job={job}></Job>)}
             </div>
         </div>
